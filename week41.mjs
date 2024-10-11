@@ -63,10 +63,24 @@ console.log("Task: B");
 
 const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineapple', 'pear', 'peach', 'plum', 'watermelon', 'blueberry', 'raspberry', 'blackberry', 'strawberry', 'cherry', 'lemon', 'lime', 'pomegranate', 'apricot'];
 
+for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i] == 'raspberry') {
+        console.log("raspberry is at position: " + i)
+    }
+}
 
+function findFruit(fruitName) {
+    for (let i = 0; i < fruits.length; i++) {
+        if (fruits[i] == fruitName) {
+            return i
+        } 
+}
+}
 
-
-
+let banana = findFruit('banana');
+console.log(banana);
+let grape = findFruit('grape');
+console.log(grape);
 
 
 /* -----------------------------------------------------------------------------
@@ -77,7 +91,6 @@ const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineappl
     3. Print the number of fruits that start with 'b' (hint: it will be the length of the list from point 2).
 */
 console.log("Task: C");
-
 
 
 
