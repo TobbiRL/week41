@@ -33,22 +33,35 @@ for (let index = 0; index < people.length; index++) {
     
 */
 console.log("Task: A");
+let numbers = [0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55];
+let sumNumbers = 0;
+let sumNumbers2 = 0;
 
+for (let i = 0; i < numbers.length; i++) {
+    sumNumbers += numbers[i];
+}
+console.log(sumNumbers);
 
+function sumValues() {
+   
+    for (let i = 0; i < numbers.length; i++) {
+        sumNumbers2 += numbers[i];
+    }
+    return sumNumbers2;
+}
 
-
+console.log(sumValues());
 
 
 /* -----------------------------------------------------------------------------
     Task: B
 
     1. Use a for loop to find the position of 'raspberry' in the list of fruits.
-    2. Create a generic function that can find the position of anny fruit in the list. 
+    2. Create a generic function that can find the position of any fruit in the list. 
 */
 console.log("Task: B");
 
 const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineapple', 'pear', 'peach', 'plum', 'watermelon', 'blueberry', 'raspberry', 'blackberry', 'strawberry', 'cherry', 'lemon', 'lime', 'pomegranate', 'apricot'];
-
 
 
 
