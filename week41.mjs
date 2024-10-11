@@ -94,16 +94,20 @@ console.log("Task: C");
 
 let fruitsStartingWithB = [];
 
-for (i = 0; i < fruits.length; i++) {
+for (let i = 0; i < fruits.length; i++) {
     if (fruits[i].startsWith("b")) {
-        
+    fruitsStartingWithB += fruits[i].startsWith("b");
     }
 }
 
+console.log(fruitsStartingWithB);
 
+const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
 
+const result = words.filter((word) => word.length > 6);
 
-
+console.log(result);
+// Expected output: Array ["exuberant", "destruction", "present"]
 
 /* -----------------------------------------------------------------------------
     Task: D
