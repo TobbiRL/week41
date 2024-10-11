@@ -132,3 +132,19 @@ console.log("Task: E");
 
 const A = [1, 4, 5, "Bananas", true, 3.14, 9.81];
 const B = [1, 3.14, 5, 9.81, true, 4, "Bananas"];
+
+let exactlySameItems = true;
+
+for (let i = 0; i < A.length; i++) {
+    let itemsA = A[i];
+}
+
+for (let i = 0; i < B.length; i++) {
+    let itemsB = B[i];
+}
+
+if (itemsB != itemsA) {
+    exactlySameItems = false;
+}
+
+console.log(exactlySameItems);
