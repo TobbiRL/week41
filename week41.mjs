@@ -117,7 +117,8 @@ let fruitsLongerThan8Char = fruits.filter((fruits) => fruits.length > 8);
 
 console.log(fruitsLongerThan8Char);
 
-
+let numberOfFruitsLongerThan8Char = fruitsLongerThan8Char.length;
+console.log("There are " + numberOfFruitsLongerThan8Char + " fruits with 8+ char");
 
 
 
