@@ -19,7 +19,17 @@ for (let index = 0; index < people.length; index++) {
     console.log(person);
 }
 
+const CHAR = {
+RASPBERRY_POSITION: "raspberry is at position: ",
+RASPBERRY: 'raspberry',
+BANANA: 'banana',
+GRAPE: 'grape',
+B: "b",
+NUM_B_FRUITS: "Number of fruits starting with b is ",
+THERE_ARE: "There are ",
+EIGHT_CHAR: " fruits with 8+ char"
 
+}
 
 
 
@@ -64,8 +74,8 @@ console.log("Task: B");
 const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineapple', 'pear', 'peach', 'plum', 'watermelon', 'blueberry', 'raspberry', 'blackberry', 'strawberry', 'cherry', 'lemon', 'lime', 'pomegranate', 'apricot'];
 
 for (let i = 0; i < fruits.length; i++) {
-    if (fruits[i] == 'raspberry') {
-        console.log("raspberry is at position: " + i)
+    if (fruits[i] == CHAR.RASPBERRY) {
+        console.log(CHAR.RASPBERRY_POSITION + i)
     }
 }
 
@@ -77,9 +87,9 @@ function findFruit(fruitName) {
 }
 }
 
-let banana = findFruit('banana');
+let banana = findFruit(CHAR.BANANA);
 console.log(banana);
-let grape = findFruit('grape');
+let grape = findFruit(CHAR.GRAPE);
 console.log(grape);
 
 
@@ -95,13 +105,13 @@ console.log("Task: C");
 let fruitsStartingWithB = [];
 
 for (let i = 0; i < fruits.length; i++) {
-    fruitsStartingWithB = fruits.filter((fruits) => fruits.startsWith("b"))
+    fruitsStartingWithB = fruits.filter((fruits) => fruits.startsWith(CHAR.B))
 }
 
 console.log(fruitsStartingWithB);
 
 let numberOfFruitsStartingWithB = fruitsStartingWithB.length;
-console.log("number of fruits starting with b is " + numberOfFruitsStartingWithB);
+console.log(CHAR.NUM_B_FRUITS + numberOfFruitsStartingWithB);
 
 
 /* -----------------------------------------------------------------------------
@@ -118,7 +128,7 @@ let fruitsLongerThan8Char = fruits.filter((fruits) => fruits.length > 8);
 console.log(fruitsLongerThan8Char);
 
 let numberOfFruitsLongerThan8Char = fruitsLongerThan8Char.length;
-console.log("There are " + numberOfFruitsLongerThan8Char + " fruits with 8+ char");
+console.log(CHAR.THERE_ARE + numberOfFruitsLongerThan8Char + CHAR.EIGHT_CHAR);
 
 
 
