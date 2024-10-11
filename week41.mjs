@@ -139,11 +139,11 @@ for (let i = 0; i < A.length; i++) {
     let itemsA = A[i];
 }
 
-for (let i = 0; i < B.length; i++) {
-    let itemsB = B[i];
+for (let j = 0; j < B.length; j++) {
+    let itemsB = B[j];
 }
 
-if (itemsB != itemsA) {
+if (itemsA != itemsB) {
     exactlySameItems = false;
 }
 
