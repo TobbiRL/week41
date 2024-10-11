@@ -92,6 +92,8 @@ console.log(grape);
 */
 console.log("Task: C");
 
+let fruitsStartingWithB = [];
+
 
 
 
