@@ -94,6 +94,11 @@ console.log("Task: C");
 
 let fruitsStartingWithB = [];
 
+for (i = 0; i < fruits.length; i++) {
+    if (fruits[i].startsWith("b")) {
+        
+    }
+}
 
 
 
