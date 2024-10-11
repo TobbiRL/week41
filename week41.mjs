@@ -113,6 +113,12 @@ console.log("Task: D");
 
 
 
+let fruitsLongerThan8Char = fruits.filter((fruits) => fruits.length > 8);
+
+console.log(fruitsLongerThan8Char);
+
+
+
 
 
 
