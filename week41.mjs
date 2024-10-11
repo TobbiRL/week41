@@ -135,15 +135,17 @@ const B = [1, 3.14, 5, 9.81, true, 4, "Bananas"];
 
 let exactlySameItems = true;
 
-
 for (let i = 0; i < A.length; i++) {
     let sameItems = false;
 
-
-for (let j = 0; j < B.length; j++) {    
-    if (A[i] == B[j]) {
-    sameItems = true;
-} else exactlySameItems = false;
-}
-}
+    for (let j = 0; j < B.length; j++) {    
+        if (A[i] == B[j]) {
+        sameItems = true;
+    
+    }
+    else if (sameItems = false) {
+        exactlySameItems = false;
+    }
+} 
+} 
 console.log(exactlySameItems);
