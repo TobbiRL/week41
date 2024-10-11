@@ -100,12 +100,9 @@ for (let i = 0; i < fruits.length; i++) {
 
 console.log(fruitsStartingWithB);
 
-const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+let numberOfFruitsStartingWithB = fruitsStartingWithB.length;
+console.log("number of fruits starting with b is " + numberOfFruitsStartingWithB);
 
-const result = words.filter((word) => word.length > 6);
-
-console.log(result);
-// Expected output: Array ["exuberant", "destruction", "present"]
 
 /* -----------------------------------------------------------------------------
     Task: D
